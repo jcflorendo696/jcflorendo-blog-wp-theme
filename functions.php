@@ -50,5 +50,28 @@ function get_breadcrumb() {
 }
 
 
+function themename_widgets_init() {
+    register_sidebar( array(
+        'name'          => __( 'Primary Sidebar'),
+        'id'            => 'sidebar-1',
+        'description'   => 'This is a description for Primary Sidebar.',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+
+
+    register_sidebar( array(
+        'name'          => __( 'Second Sidebar'),
+        'id'            => 'sidebar-2',
+        'description'   => 'This is a description for Secondary Sidebar.',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h3 class="widget-title">',
+        'after_title'   => '</h3>',
+    ) );
+}
+add_action('widgets_init','themename_widgets_init');
 
 ?>
