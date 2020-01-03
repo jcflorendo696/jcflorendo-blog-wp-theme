@@ -1,0 +1,11 @@
+jcf-blog-theme
+
+1. Add URL to post list in homepage. - done
+2. Create author page. - done
+3. Create sidebar - done
+4. Add breadcrumbs - done
+5. Add searchpage - done
+6. Edit searchform - done
+7. side by side cards in index
+8. Add category name and page - done
+9. Add 404 page
